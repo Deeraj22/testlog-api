@@ -1,5 +1,5 @@
 const allowedOrigins = [
-    'https://testlog.onrender.com'
+    'https://mytestlogreact.onrender.com'
 ]
 
 module.exports = allowedOrigins

@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 const userController = require('./controller/user')
 
 
-const port = 5000  //the port where backed works
+const port = process.env.PORT || 3000 //the port where backed works
 const app = express()  // To create server
 
 

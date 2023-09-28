@@ -74,8 +74,8 @@ module.exports.sendotp = async (req, res) => {
             port: 587,
             secure: false,
             auth: {
-                user: 'dd5634809@gmail.com',
-                pass: 'dsdekjbntjmufcai',
+                user: process.env.USER,
+                pass: process.env.PASS,
             }
         })
 

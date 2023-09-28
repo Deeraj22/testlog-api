@@ -27,6 +27,9 @@ mongoose.connect(uri, {
     .catch((err) => { console.error('Error'); });
 //parse application/x-www-form-urlencoded
 
+app.post("/", (req, res) => {
+    res.send("<html> <head>server Response</head><body><h1>DB connected<p>Hello there welcome to my website</p></h1></body></html>");
+});
 
 app.post('/signup', userController.signup)   //we will call this api using frontend
 
